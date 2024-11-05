@@ -25,7 +25,7 @@ O projeto Carros Bolados é um site dinâmico e responsivo desenvolvido para apr
 ## Visualização da Aplicação: 🔗
 
 ![Texto alternativo](./assets/meu-gif.gif)
-> Link da visualisação da aplicação: 
+> Link da visualisação da aplicação: https://keven-costa.github.io/carros-bolados/
 
 
 
