@@ -25,7 +25,7 @@ O projeto Carros Bolados é um site dinâmico e responsivo desenvolvido para apr
 ## Visualização da Aplicação: 🔗
 
 ![Texto alternativo](./assets/meu-gif.gif)
-> Link da visualisação da aplicação: https://keven-costa.github.io/carros-bolados/
+> Link da visualisação da aplicação: https://keven-costa.github.io/carros-bolados/pages/
 
 
 
@@ -43,4 +43,4 @@ git@github.com:Keven-Costa/carros-bolados.git
 
 The [MIT License]() (MIT)
 
-Copyright: ©️ 2024 - Carros Boladso
+Copyright: ©️ 2024 - Carros Bolados
