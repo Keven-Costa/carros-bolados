@@ -1,0 +1,482 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto */
+    padding: 10px 0; /* Espaçamento interno */
+    display: flex; /* Alinha os itens horizontalmente */
+    justify-content: space-between; /* Coloca o logo à esquerda e o menu à direita */
+    align-items: center; /* Centraliza verticalmente os itens */
+    padding: 0 20px; /* Adiciona espaçamento nas laterais */
+}
+
+#logo {
+    width: 100px; /* Tamanho do logo */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+nav ul {
+    list-style: none; /* Remove a lista não ordenada */
+    display: flex; /* Exibe os itens de navegação em linha */
+    justify-content: flex-end; /* Alinha os itens do menu à direita */
+    gap: 20px; /* Espaçamento entre os itens do menu */
+}
+
+nav ul li {
+    margin: 0; /* Remove a margem dos itens */
+}
+
+nav ul li a {
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 1.1rem; /* Tamanho da fonte */
+    font-weight: 600; /* Deixa a fonte mais ousada */
+    transition: color 0.3s ease-in-out; /* Transição suave para a cor ao passar o mouse */
+}
+
+nav ul li a:hover {
+    color: #ff7e5f; /* Altera a cor ao passar o mouse */
+}
+
+/* Responsividade - Menu em tela pequena */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Alinha os itens em coluna em telas pequenas */
+        text-align: center; /* Centraliza o conteúdo */
+    }
+
+    #logo {
+        margin-bottom: 10px; /* Espaço abaixo do logo */
+    }
+
+    nav ul {
+        flex-direction: column; /* Alinha os itens do menu em coluna */
+        gap: 10px; /* Espaçamento entre os itens */
+    }
+
+    nav ul li a {
+        font-size: 1.2rem; /* Aumenta o tamanho da fonte em dispositivos pequenos */
+    }
+}
+
+
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.conteudo-principal,
+.promocoes {
+    padding: 20px;
+    text-align: center;
+}
+
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+/* Promoções */
+.promocoes {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f7f7f7;
+}
+
+.promocoes h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.promocoes p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.promo-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.promo-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.promo-card:hover {
+    transform: scale(1.05);
+}
+
+.promo-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.promo-details {
+    padding: 20px;
+    text-align: left;
+}
+
+.promo-details h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.promo-details p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Sobre Nós */
+.conteudo-principal {
+    position: relative;
+    padding: 50px 20px;
+    background-image: url('./assets/sobre-nos-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+.conteudo-overlay {
+    background: rgba(0, 0, 0, 0.5); /* Sobreposição escura para melhorar a legibilidade */
+    padding: 40px 20px;
+    border-radius: 8px;
+}
+
+.conteudo-principal h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+}
+
+.conteudo-principal p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.sobre-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.sobre-item {
+    background-color: rgba(255, 255, 255, 0.8); /* Cartões com leve transparência */
+    padding: 20px;
+    border-radius: 12px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sobre-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.sobre-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.sobre-item p,
+.sobre-item ul {
+    font-size: 1rem;
+    color: #555;
+}
+
+.sobre-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sobre-item li {
+    margin-bottom: 10px;
+}
+
+.cta-btn {
+    background-color: #ff7e5f;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #feb47b;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .sobre-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+/* carousel  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carousel-container {
+    width: 80%;
+
+    /* Ajuste a largura do carrossel conforme necessário */
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    list-style: none;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider li {
+    min-width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 100%;
+    /* A imagem agora ocupa 100% do contêiner */
+    height: 100%;
+    /* Mantém a proporção da imagem */
+    object-fit: cover;
+    /* Garantir que a imagem preencha o contêiner sem distorcer */
+}
+
+/* Adicionando controles */
+.carousel-container::before,
+.carousel-container::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-container::before {
+    left: 10px;
+}
+
+.carousel-container::after {
+    right: 10px;
+}
+
+
+/* Estilos para a seção de mapa */
+.mapa {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.mapa h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    .mapa {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .mapa h2 {
+        font-size: 1.3rem;
+    }
+
+    .mapa iframe {
+        height: 300px;
+    }
+}
+
+
+
+
+/* Roda pé */
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-links, .footer-social, .footer-contact {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-links h3, .footer-social h3, .footer-contact h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.footer-links ul, .footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li, .footer-social li {
+    margin-bottom: 10px;
+}
+
+.footer-links a, .footer-social a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover, .footer-social a:hover {
+    color: #feb47b;
+}
+
+.footer-social img {
+    width: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.footer-social img:hover {
+    transform: scale(1.2);
+}
+
+.footer-contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    color: #feb47b;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links, .footer-social, .footer-contact {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
